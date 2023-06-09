@@ -24,7 +24,7 @@ Information TX Board
 Information RX Board
 - Microcontroller: STM32F401CCU3
 - Joystick: 7 Channel
-- Button : 9 Chanel
+- Button : 7 Chanel
 - Battery: 8.4 V
 - Measure battery
 
@@ -34,3 +34,13 @@ Information RX Board
 <p align="center">
   Board TX with Altium
 </p>
+
+<p align="center">
+  <img src="https://github.com/quyleHCMUT/ProjectTXRX/blob/main/image/PCBTX_1.jpg" width="400" />
+</p>
+<p align="center">
+  Board PCB TX
+</p>
+
+Project is running ( 50% )
+
