@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetR28_1 Pin=U1-7
+Removed Pin From Net: NetName=NetR28_2 Pin=U2-1
+Change Component Footprint: Designator=R28 Old Footprint=AXIAL-0.5 New Footprint=tro vach 1/4w
+Change Component Comment : Designator=R28 Old Comment=470 New Comment=51k
+Change component parameters: Designator = "R28" ("R28"); Footprint = "AXIAL-0.5"; UniqueID = "\CKBIWMNO" ("\CKBIWMNO")
+Change component parameters (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ma_Hang"; Value = "MH007354"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "So_Chan"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Ten_Linh_Kien"; Value = "Tr? V?ch 1/4w 5% 10K"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR28_2 Pin=U1-7
+Added Pin To Net: NetName=NetR28_1 Pin=U2-1
+Added Room: Name=SCH

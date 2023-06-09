@@ -1,0 +1,40 @@
+Added Component: Designator=LS1(SPEAKER)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi_Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu_Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH000902"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ten_Linh_Kien"; Value = "Còi Chip 5V 9.5x12MM"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(QTO-92)
+Add component (AddParameter): Name = "Value"; Value = "C1815"; VariantName = "[No Variations]"
+Added Component: Designator=R27(AXIAL-0.5)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=R28(AXIAL-0.5)
+Add component (AddParameter): Name = "Value"; Value = "R1/4W - 1K"; VariantName = "[No Variations]"
+Added Component: Designator=U2(DIP4/W0.3)
+Add component (AddParameter): Name = "Value"; Value = "PC817"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5V Pin=LS1-1
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=5V Pin=R27-2
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=NetLS1_2 Pin=LS1-2
+Added Pin To Net: NetName=NetLS1_2 Pin=Q1-1
+Added Net: Name=NetLS1_2
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=U2-3
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetR27_1 Pin=R27-1
+Added Pin To Net: NetName=NetR27_1 Pin=U2-4
+Added Net: Name=NetR27_1
+Added Pin To Net: NetName=NetR28_1 Pin=R28-1
+Added Pin To Net: NetName=NetR28_1 Pin=U1-7
+Added Net: Name=NetR28_1
+Added Pin To Net: NetName=NetR28_2 Pin=R28-2
+Added Pin To Net: NetName=NetR28_2 Pin=U2-1
+Added Net: Name=NetR28_2
+Added Member To Class: ClassName=SCH Member=Component LS1
+Added Member To Class: ClassName=SCH Member=Component Q1 C1815
+Added Member To Class: ClassName=SCH Member=Component R27 1k
+Added Member To Class: ClassName=SCH Member=Component R28 470
+Added Member To Class: ClassName=SCH Member=Component U2 PC817
+Added Room: Name=SCH

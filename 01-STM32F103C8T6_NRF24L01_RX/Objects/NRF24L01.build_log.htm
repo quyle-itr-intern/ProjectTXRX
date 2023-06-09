@@ -1,0 +1,527 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: li levan, il, LIC=TIVNB-2ZG7W-UHD8H-WUXS9-6FJ8T-EFI3U
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.28.0.0
+Toolchain Path:  D:\File Install KeilC\KeilC V5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.12
+Assembler:       Armasm.exe V6.12
+Linker/Locator:  ArmLink.exe V6.12
+Library Manager: ArmAr.exe V6.12
+Hex Converter:   FromElf.exe V6.12
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+E:\Downloads\STM32F1\STM32F103C8T6_STD\01-STM32F103T8T6_NRF24L01_RX\NRF24L01_RX.uvprojx
+Project File Date:  05/27/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.12', folder: 'D:\File Install KeilC\KeilC V5\ARM\ARMCLANG\Bin'
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'NRF24L01_RX'
+compiling misc.c...
+lib/misc.c(23): warning: In file included from...
+./lib/misc.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/misc.c(131): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IP[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                               ~ ^~~~~~~~~~~
+2 warnings generated.
+compiling stm32f10x_adc.c...
+lib/stm32f10x_adc.c(22): warning: In file included from...
+./lib/stm32f10x_adc.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_adc.c(22): warning: In file included from...
+./lib\stm32f10x_adc.h(63): warning: padding struct 'ADC_InitTypeDef' with 2 bytes to align 'ADC_ExternalTrigConv' [-Wpadded]
+  uint32_t ADC_ExternalTrigConv;          /*!< Defines the external trigger used to start the analog
+           ^
+./lib\stm32f10x_adc.h(49): warning: padding size of 'ADC_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+3 warnings generated.
+compiling stm32f10x_bkp.c...
+lib/stm32f10x_bkp.c(22): warning: In file included from...
+./lib/stm32f10x_bkp.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_can.c...
+lib/stm32f10x_can.c(22): warning: In file included from...
+./lib/stm32f10x_can.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_can.c(22): warning: In file included from...
+./lib\stm32f10x_can.h(144): warning: padding size of 'CanTxMsg' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling stm32f10x_cec.c...
+lib/stm32f10x_cec.c(22): warning: In file included from...
+./lib/stm32f10x_cec.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_cec.c(144): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmpreg = CEC->CFGR;
+         ~ ~~~~~^~~~
+2 warnings generated.
+compiling stm32f10x_crc.c...
+lib/stm32f10x_crc.c(22): warning: In file included from...
+./lib/stm32f10x_crc.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_dac.c...
+lib/stm32f10x_dac.c(22): warning: In file included from...
+./lib/stm32f10x_dac.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_dbgmcu.c...
+lib/stm32f10x_dbgmcu.c(22): warning: In file included from...
+./lib/stm32f10x_dbgmcu.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_dma.c...
+lib/stm32f10x_dma.c(22): warning: In file included from...
+./lib/stm32f10x_dma.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_exti.c...
+lib/stm32f10x_exti.c(22): warning: In file included from...
+./lib/stm32f10x_exti.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_exti.c(22): warning: In file included from...
+./lib\stm32f10x_exti.h(75): warning: padding size of 'EXTI_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling stm32f10x_fsmc.c...
+lib/stm32f10x_fsmc.c(22): warning: In file included from...
+./lib/stm32f10x_fsmc.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_gpio.c...
+lib/stm32f10x_gpio.c(22): warning: In file included from...
+./lib/stm32f10x_gpio.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_i2c.c...
+lib/stm32f10x_i2c.c(22): warning: In file included from...
+./lib/stm32f10x_i2c.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_i2c.c(22): warning: In file included from...
+./lib\stm32f10x_i2c.h(49): warning: padding size of 'I2C_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling stm32f10x_iwdg.c...
+lib/stm32f10x_iwdg.c(22): warning: In file included from...
+./lib/stm32f10x_iwdg.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_pwr.c...
+lib/stm32f10x_pwr.c(22): warning: In file included from...
+./lib/stm32f10x_pwr.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_rcc.c...
+lib/stm32f10x_rcc.c(22): warning: In file included from...
+./lib/stm32f10x_rcc.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_rtc.c...
+lib/stm32f10x_rtc.c(22): warning: In file included from...
+./lib/stm32f10x_rtc.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling stm32f10x_sdio.c...
+lib/stm32f10x_sdio.c(22): warning: In file included from...
+./lib/stm32f10x_sdio.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_sdio.c(22): warning: In file included from...
+./lib\stm32f10x_sdio.h(45): warning: padding size of 'SDIO_InitTypeDef' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling stm32f10x_spi.c...
+lib/stm32f10x_spi.c(22): warning: In file included from...
+./lib/stm32f10x_spi.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_spi.c(22): warning: In file included from...
+./lib\stm32f10x_spi.h(86): warning: padding size of 'I2S_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+lib/stm32f10x_spi.c(493): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = (uint16_t)1 << (uint16_t)itpos;
+         ~ ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+lib/stm32f10x_spi.c(838): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+lib/stm32f10x_spi.c(844): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = 0x01 << itmask;
+         ~ ~~~~~^~~~~~~~~
+lib/stm32f10x_spi.c(890): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itpos = 0x01 << (SPI_I2S_IT & 0x0F);
+        ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+6 warnings generated.
+compiling stm32f10x_tim.c...
+lib/stm32f10x_tim.c(22): warning: In file included from...
+./lib/stm32f10x_tim.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_tim.c(22): warning: In file included from...
+./lib\stm32f10x_tim.h(50): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+lib/stm32f10x_tim.c(725): warning: implicit conversion loses integer precision: 'unsigned int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+             TIM_BDTRInitStruct->TIM_Break | TIM_BDTRInitStruct->TIM_BreakPolarity |
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+lib/stm32f10x_tim.c(1982): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+lib/stm32f10x_tim.c(2012): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp = CCER_CCNE_Set << TIM_Channel;
+      ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+lib/stm32f10x_tim.c(2057): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  tmp1 = CCER_CCE_Set << (uint16_t)TIM_Channel;
+       ~ ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+6 warnings generated.
+compiling stm32f10x_usart.c...
+lib/stm32f10x_usart.c(22): warning: In file included from...
+./lib/stm32f10x_usart.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+lib/stm32f10x_usart.c(22): warning: In file included from...
+./lib\stm32f10x_usart.h(49): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+lib/stm32f10x_usart.c(1043): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  itmask = ((uint16_t)0x01 << (uint16_t)bitpos);
+         ~  ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+compiling stm32f10x_wwdg.c...
+lib/stm32f10x_wwdg.c(22): warning: In file included from...
+./lib/stm32f10x_wwdg.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling main.c...
+src/main.c(1): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES\lvq_stm32f1_rccConfig.h(22): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+src/main.c(3): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES\lvq_stm32f1_nrf24.h(35): warning: padding struct 'LVQ_NRF24_Config_t' with 3 bytes to align 'NRF24_CE_PORT' [-Wpadded]
+                GPIO_TypeDef*                   NRF24_CE_PORT;
+                                                ^
+../00-STM32F103C8T6_LIBRARIES\lvq_stm32f1_nrf24.h(37): warning: padding struct 'LVQ_NRF24_Config_t' with 2 bytes to align 'NRF24_CSN_PORT' [-Wpadded]
+                GPIO_TypeDef*                   NRF24_CSN_PORT;
+                                                ^
+../00-STM32F103C8T6_LIBRARIES\lvq_stm32f1_nrf24.h(32): warning: padding size of 'LVQ_NRF24_Config_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct {
+        ^
+4 warnings generated.
+compiling stm32f10x_it.c...
+src/stm32f10x_it.c(24): warning: In file included from...
+./src/stm32f10x_it.h(30): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+src/stm32f10x_it.c(56): warning: function 'HardFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+src/stm32f10x_it.c(69): warning: function 'MemManage_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+src/stm32f10x_it.c(82): warning: function 'BusFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+src/stm32f10x_it.c(95): warning: function 'UsageFault_Handler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+5 warnings generated.
+compiling system_stm32f10x.c...
+src/system_stm32f10x.c(64): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+src/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+2 warnings generated.
+assembling startup_stm32f10x_md.s...
+compiling delay_systick.c...
+userlib/delay_systick.c(27): warning: In file included from...
+./userlib/delay_systick.h(30): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+1 warning generated.
+compiling rfid.c...
+userlib/rfid.c(1): warning: In file included from...
+./userlib/rfid.h(11): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+userlib/rfid.c(1): warning: In file included from...
+./userlib/rfid.h(166): warning: no newline at end of file [-Wnewline-eof]
+                                                                                                                                                                                                                 
+                                                                                                                                                                                                                 ^
+userlib/rfid.c(15): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        return SPI_I2S_ReceiveData(MFRC522_SPI);
+        ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+userlib/rfid.c(148): warning: code will never be executed [-Wunreachable-code]
+                RCC_APB2PeriphClockCmd(MFRC522_SPI1_RCC,ENABLE);                                                                                                                                // Enable clock SPI1
+                ^~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.
+compiling usart.c...
+userlib/usart.c(2): warning: In file included from...
+./userlib/usart.h(5): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+userlib/usart.c(12): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  USART_SendData(USARTx, ch);
+  ~~~~~~~~~~~~~~         ^~
+userlib/usart.c(9): warning: unused parameter 'f' [-Wunused-parameter]
+int fputc(int ch, FILE *f) 
+                        ^
+userlib/usart.c(20): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'char' [-Wimplicit-int-conversion]
+  ch = USART_ReceiveData(USARTx);
+     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+userlib/usart.c(16): warning: unused parameter 'f' [-Wunused-parameter]
+int fgetc(FILE *f) 
+                ^
+userlib/usart.c(24): warning: unused parameter 'f' [-Wunused-parameter]
+int ferror(FILE *f) 
+                 ^
+userlib/usart.c(32): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  USART_SendData(USARTx, ch);
+  ~~~~~~~~~~~~~~         ^~
+userlib/usart.c(29): warning: no previous prototype for function '_ttywrch' [-Wmissing-prototypes]
+void _ttywrch(int ch) 
+     ^
+userlib/usart.c(35): warning: unused parameter 'return_code' [-Wunused-parameter]
+void _sys_exit(int return_code) 
+                   ^
+userlib/usart.c(35): warning: no previous prototype for function '_sys_exit' [-Wmissing-prototypes]
+void _sys_exit(int return_code) 
+     ^
+userlib/usart.c(36): warning: function '_sys_exit' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+userlib/usart.c(2): warning: In file included from...
+./userlib/usart.h(5): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(8302): warning: In file included from...
+./src\stm32f10x_conf.h(47): warning: In file included from...
+./lib\stm32f10x_usart.h(49): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+12 warnings generated.
+compiling pwm.c...
+userlib/pwm.c(1): warning: In file included from...
+./userlib/pwm.h(4): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+userlib/pwm.c(1): warning: In file included from...
+./userlib/pwm.h(4): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(8302): warning: In file included from...
+./src\stm32f10x_conf.h(46): warning: In file included from...
+./lib\stm32f10x_tim.h(50): warning: padding size of 'TIM_TimeBaseInitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+2 warnings generated.
+compiling lvq_stm32f1_gpio.c...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(1): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.h(9): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_rccConfig.h(22): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(23): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void LVQ_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_OType_t GPIO_OType, LVQ_GPIO_PuPd_t GPIO_PuPd, LVQ_GPIO_Speed_t GPIO_Speed, uint8_t Alternate) 
+                                          ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(23): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void LVQ_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_OType_t GPIO_OType, LVQ_GPIO_PuPd_t GPIO_PuPd, LVQ_GPIO_Speed_t GPIO_Speed, uint8_t Alternate) 
+                                                          ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(23): warning: unused parameter 'GPIO_OType' [-Wunused-parameter]
+void LVQ_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_OType_t GPIO_OType, LVQ_GPIO_PuPd_t GPIO_PuPd, LVQ_GPIO_Speed_t GPIO_Speed, uint8_t Alternate) 
+                                                                                     ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(23): warning: unused parameter 'GPIO_PuPd' [-Wunused-parameter]
+void LVQ_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_OType_t GPIO_OType, LVQ_GPIO_PuPd_t GPIO_PuPd, LVQ_GPIO_Speed_t GPIO_Speed, uint8_t Alternate) 
+                                                                                                                 ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(23): warning: unused parameter 'GPIO_Speed' [-Wunused-parameter]
+void LVQ_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_OType_t GPIO_OType, LVQ_GPIO_PuPd_t GPIO_PuPd, LVQ_GPIO_Speed_t GPIO_Speed, uint8_t Alternate) 
+                                                                                                                                             ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(23): warning: unused parameter 'Alternate' [-Wunused-parameter]
+void LVQ_GPIO_InitAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_OType_t GPIO_OType, LVQ_GPIO_PuPd_t GPIO_PuPd, LVQ_GPIO_Speed_t GPIO_Speed, uint8_t Alternate) 
+                                                                                                                                                                 ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(79): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsInput(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)       // 00: Input(reset state)
+                                          ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(79): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsInput(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)       // 00: Input(reset state)
+                                                          ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(84): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsOutput(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)      // 01: General purpose output mode
+                                           ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(84): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsOutput(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)      // 01: General purpose output mode
+                                                           ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(89): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsAnalog(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)      // 11: Analog mode
+                                           ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(89): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsAnalog(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)      // 11: Analog mode
+                                                           ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(94): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)   // 10: Alternate function mode
+                                              ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(94): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void LVQ_GPIO_SetPinAsAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)   // 10: Alternate function mode
+                                                              ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(94): warning: no previous prototype for function 'LVQ_GPIO_SetPinAsAlternate' [-Wmissing-prototypes]
+void LVQ_GPIO_SetPinAsAlternate(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin)   // 10: Alternate function mode
+     ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(106): warning: unused parameter 'GPIOx' [-Wunused-parameter]
+void LVQ_GPIO_SetPullResistor(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_PuPd_t GPIO_PuPd) 
+                                            ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(106): warning: unused parameter 'GPIO_Pin' [-Wunused-parameter]
+void LVQ_GPIO_SetPullResistor(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_PuPd_t GPIO_PuPd) 
+                                                            ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_gpio.c(106): warning: unused parameter 'GPIO_PuPd' [-Wunused-parameter]
+void LVQ_GPIO_SetPullResistor(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, LVQ_GPIO_PuPd_t GPIO_PuPd) 
+                                                                                      ^
+19 warnings generated.
+compiling lvq_stm32f1_spi.c...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_spi.c(1): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_spi.h(17): warning: In file included from...
+./lib\stm32f10x_gpio.h(31): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_spi.c(322): warning: unused parameter 'SPIx' [-Wunused-parameter]
+void LVQ_SPI_InitCustomPinsCallback(SPI_TypeDef* SPIx, uint16_t AlternateFunction)
+                                                 ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_spi.c(322): warning: unused parameter 'AlternateFunction' [-Wunused-parameter]
+void LVQ_SPI_InitCustomPinsCallback(SPI_TypeDef* SPIx, uint16_t AlternateFunction)
+                                                                ^
+3 warnings generated.
+compiling lvq_stm32f1_nrf24.c...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_nrf24.c(11): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_nrf24.h(25): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_rccConfig.h(22): warning: In file included from...
+D:/File Install KeilC/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include\stm32f10x.h(483): warning: In file included from...
+./core\core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_nrf24.c(11): warning: In file included from...
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_nrf24.h(35): warning: padding struct 'LVQ_NRF24_Config_t' with 3 bytes to align 'NRF24_CE_PORT' [-Wpadded]
+                GPIO_TypeDef*                   NRF24_CE_PORT;
+                                                ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_nrf24.h(37): warning: padding struct 'LVQ_NRF24_Config_t' with 2 bytes to align 'NRF24_CSN_PORT' [-Wpadded]
+                GPIO_TypeDef*                   NRF24_CSN_PORT;
+                                                ^
+../00-STM32F103C8T6_LIBRARIES/lvq_stm32f1_nrf24.h(32): warning: padding size of 'LVQ_NRF24_Config_t' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct {
+        ^
+4 warnings generated.
+linking...
+Program Size: Code=8842 RO-data=282 RW-data=44 ZI-data=1644  
+FromELF: creating hex file...
+".\Objects\NRF24L01.axf" - 0 Error(s), 98 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_NRF24L01_RX
+  D:\File Install KeilC\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:16
+</pre>
+</body>
+</html>
