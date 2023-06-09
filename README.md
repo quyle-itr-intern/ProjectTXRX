@@ -18,6 +18,7 @@ Information TX Board
 <p align="center">
   Board PCB RX
 </p>
+
 Information RX Board
 - Microcontroller: STM32F401CCU6
 - Joystick: 7 Channel
