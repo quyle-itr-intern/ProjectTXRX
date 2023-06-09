@@ -11,7 +11,14 @@ Information TX Board
   <img src="https://github.com/quyleHCMUT/ProjectTXRX/blob/main/image/PCBRX.png" width="400" />
 </p>
 <p align="center">
-  EasyEDA
+  Board RX with EasyEDA
+</p>
+
+<p align="center">
+  <img src="https://github.com/quyleHCMUT/ProjectTXRX/blob/main/image/PCBRX_1.jpg" width="400" />
+</p>
+<p align="center">
+  Board PCB RX
 </p>
 
 
