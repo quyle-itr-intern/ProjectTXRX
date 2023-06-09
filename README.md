@@ -25,6 +25,7 @@ Information RX Board
 - Button : 7 Chanel
 - Battery: 8.4 V
 - Measure battery
+
 Function TX
 - Trim
 - Reserve
