@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ProjectTXRX
 # Test
 =======
@@ -48,5 +47,3 @@ Function TX
   Board PCB TX
 </p>
 Project is running ( 50% )
-
->>>>>>> 9abaac8f6dd0ca08e81ca9858b4c090bf4dcc96a
