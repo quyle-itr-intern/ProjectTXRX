@@ -1,6 +1,3 @@
-# ProjectTXRX
-# Test
-=======
 # Project TX RX
 
 Information TX Board
