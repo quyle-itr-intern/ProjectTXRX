@@ -44,6 +44,6 @@ Function TX
   Board PCB TX
 </p>
 
-
+### ***Video test tranfer data:*** *https://youtube.com/shorts/WDtpVFCUezY?feature=share*
 
 Project is running ( 50% )
