@@ -51,4 +51,7 @@ Final Complete Hardware
 <p align="center">
   Hardware TX RX
 </p>
+
+Start programming...
+
 Project is running ( 70% )
