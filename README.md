@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# ProjectTXRX
-# Test
-=======
 # Project TX RX
 
 Information TX Board
@@ -42,11 +38,12 @@ Function TX
   Board TX with Altium
 </p>
 <p align="center">
-  <img src="https://github.com/quyleHCMUT/ProjectTXRX/blob/main/image/PCBTX_1.jpg" width="400" />
+  <img src="https://github.com/quyleHCMUT/ProjectTXRX/blob/main/image/PCB_TX.jpg" width="400" />
 </p>
 <p align="center">
   Board PCB TX
 </p>
-Project is running ( 50% )
 
->>>>>>> 9abaac8f6dd0ca08e81ca9858b4c090bf4dcc96a
+### ***Video test transfer data:*** *https://youtube.com/shorts/WDtpVFCUezY?feature=share*
+
+Project is running ( 50% )
