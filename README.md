@@ -44,6 +44,11 @@ Function TX
   Board PCB TX
 </p>
 
-### ***Video test transfer data:*** *https://youtube.com/shorts/WDtpVFCUezY?feature=share*
-
-Project is running ( 50% )
+Final Complete Hardware 
+<p align="center">
+  <img src="https://github.com/quyleHCMUT/ProjectTXRX/blob/main/image/finallhardware.jpg" width="400" />
+</p>
+<p align="center">
+  Hardware TX RX
+</p>
+Project is running ( 70% )
