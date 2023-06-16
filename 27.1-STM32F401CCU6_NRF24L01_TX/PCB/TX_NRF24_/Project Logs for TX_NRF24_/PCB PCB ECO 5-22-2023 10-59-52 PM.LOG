@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=3.3V Pin=JP1-8
+Change Component Designator: OldDesignator=NRF24L01 NewDesignator=N1
+Added Pin To Net: NetName=5V Pin=JP1-8
+Added Room: Name=SCH

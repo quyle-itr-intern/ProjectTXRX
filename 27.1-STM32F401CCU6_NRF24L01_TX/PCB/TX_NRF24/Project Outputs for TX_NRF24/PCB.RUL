@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\PCB\TX_NRF24\PCB.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.87
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=15.75
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

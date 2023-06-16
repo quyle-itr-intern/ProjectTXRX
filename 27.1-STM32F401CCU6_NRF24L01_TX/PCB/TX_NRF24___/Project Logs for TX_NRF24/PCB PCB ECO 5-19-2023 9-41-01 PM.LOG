@@ -1,0 +1,14 @@
+Added Component: Designator=J9(ZH1.25 3P)
+Add component (AddParameter): Name = "Chung_Loai"; Value = "C?m"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Don_Vi"; Value = "Con"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ghi Chu"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Kieu Chan"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ma_Hang"; Value = "MH000903"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Jump Ðon Ð?c 2.54MM 1x40P Th?ng 11MM"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J9-1
+Added Pin To Net: NetName=3.3V Pin=J9-3
+Added Pin To Net: NetName=PA7 Pin=J9-2
+Added Pin To Net: NetName=PA7 Pin=U1-17
+Added Net: Name=PA7
+Added Member To Class: ClassName=SCH Member=Component J9 1.25_4P
+Added Room: Name=SCH

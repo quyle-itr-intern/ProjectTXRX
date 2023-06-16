@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=CH1+ Pin=IC2-11
+Removed Pin From Net: NetName=CH1- Pin=IC2-12
+Added Pin To Net: NetName=CH1- Pin=IC2-11
+Added Pin To Net: NetName=CH1+ Pin=IC2-12
+Added Room: Name=SCH

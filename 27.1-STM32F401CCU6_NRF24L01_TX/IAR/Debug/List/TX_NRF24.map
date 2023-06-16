@@ -1,0 +1,505 @@
+###############################################################################
+#
+# IAR ELF Linker V9.30.1.335/W64 for ARM                  18/May/2023  08:45:58
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Exe\TX_NRF24.out
+#    Map file     =
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\List\TX_NRF24.map
+#    Command line =
+#        -f
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Exe\TX_NRF24.out.rsp
+#        (E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_adc.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_adc_dma.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_delay.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_fonts.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_gpio.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_i2c.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_nrf24.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_ssd1306.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ\lvq_stm32f4_uitx.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\src\main.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\STD\misc.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\STD\stm32f4xx_adc.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\STD\stm32f4xx_i2c.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\src\stm32f4xx_it.o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\src\system_stm32f4xx.o
+#        --no_out_extension -o
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Exe\TX_NRF24.out
+#        --map
+#        E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\List\TX_NRF24.map
+#        --config "E:\IAR Systems\Embedded Workbench
+#        9.1\arm/config/linker/ST/stm32f401xC.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale --cpu=Cortex-M4
+#        --fpu=VFPv4_sp)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x803'ffff] { ro };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0x40
+  .intvec            ro code   0x800'0000    0x40  vector_table_M.o [6]
+                             - 0x800'0040    0x40
+
+"P1":                                      0x4ca4
+  .text              ro code   0x800'0040   0xf1c  lvq_stm32f4_uitx.o [1]
+  .text              ro code   0x800'0f5c   0x73c  lvq_stm32f4_ssd1306.o [1]
+  .text              ro code   0x800'1698   0x1cc  lvq_stm32f4_delay.o [1]
+  .text              ro code   0x800'1864    0x22  lvq_stm32f4_nrf24.o [1]
+  .text              ro code   0x800'1886    0x3a  packbits_init_single.o [6]
+  .text              ro code   0x800'18c0    0x76  ABImemcpy_unaligned.o [6]
+  .text              ro code   0x800'1936     0xa  xsprout.o [4]
+  .text              ro code   0x800'1940    0x40  sprintf.o [4]
+  .text              ro code   0x800'1980    0x1c  U32ToDbl.o [5]
+  .text              ro code   0x800'199c   0x1aa  DblMul.o [5]
+  .rodata            const     0x800'1b46     0x2  xlocale_c.o [4]
+  .text              ro code   0x800'1b48    0x68  DblToFlt.o [5]
+  .text              ro code   0x800'1bb0    0x48  FltToDbl.o [5]
+  .text              ro code   0x800'1bf8   0x4a0  lvq_stm32f4_i2c.o [1]
+  .text              ro code   0x800'2098    0x66  ABImemset.o [6]
+  .rodata            const     0x800'20fe     0x1  xlocale_c.o [4]
+  .text              ro code   0x800'2100   0xcda  xprintflarge_nomb.o [4]
+  .text              ro code   0x800'2ddc    0x34  stm32f4xx_i2c.o [2]
+  .text              ro code   0x800'2e10   0x260  lvq_stm32f4_gpio.o [1]
+  .text              ro code   0x800'3070     0x2  lvq_stm32f4_i2c.o [1]
+  .text              ro code   0x800'3074    0x16  strchr.o [6]
+  .text              ro code   0x800'308c    0x40  xfail_s.o [4]
+  .text              ro code   0x800'30cc    0x36  strlen.o [6]
+  .text              ro code   0x800'3104    0x58  memchr.o [6]
+  .text              ro code   0x800'315c    0x70  frexp.o [5]
+  .text              ro code   0x800'31cc   0x246  DblDiv.o [5]
+  .text              ro code   0x800'3414    0x22  DblToU32.o [5]
+  .text              ro code   0x800'3438   0x24e  DblAddSub.o [5]
+  .text              ro code   0x800'3688     0x8  xlocale_c.o [4]
+  .text              ro code   0x800'3690   0x230  I64DivMod.o [6]
+  .text              ro code   0x800'38c0     0x6  abort.o [4]
+  .text              ro code   0x800'38c8     0x2  I64DivZer.o [6]
+  .text              ro code   0x800'38cc    0x14  exit.o [7]
+  .text              ro code   0x800'38e0    0x2c  iarttio.o [7]
+  .text              ro code   0x800'390c     0x8  XShttio.o [4]
+  .rodata            const     0x800'3914   0x76c  lvq_stm32f4_fonts.o [1]
+  .rodata            const     0x800'4080   0x400  lvq_stm32f4_uitx.o [1]
+  .text              ro code   0x800'4480   0x1ac  lvq_stm32f4_adc_dma.o [1]
+  .text              ro code   0x800'462c    0x16  lvq_stm32f4_adc.o [1]
+  .text              ro code   0x800'4644    0xd4  stm32f4xx_adc.o [2]
+  .text              ro code   0x800'4718    0xb4  main.o [3]
+  .rodata            const     0x800'47cc    0x84  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4850    0x40  lvq_stm32f4_uitx.o [1]
+  .text              ro code   0x800'4890    0x38  zero_init3.o [6]
+  .text              ro code   0x800'48c8    0x28  data_init.o [6]
+  .text              ro code   0x800'48f0    0x22  fpinit_M.o [5]
+  .iar.init_table    const     0x800'4914    0x20  - Linker created -
+  .rodata            const     0x800'4934    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4954    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4974    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4994    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'49b4    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'49d4    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'49f4    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4a14    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4a34    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4a54    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4a74    0x20  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4a94    0x20  lvq_stm32f4_uitx.o [1]
+  .text              ro code   0x800'4ab4    0x1e  cmain.o [6]
+  .text              ro code   0x800'4ad2     0x4  low_level_init.o [4]
+  .text              ro code   0x800'4ad6     0x4  exit.o [4]
+  .text              ro code   0x800'4adc     0xa  cexit.o [6]
+  .rodata            const     0x800'4ae8    0x1c  lvq_stm32f4_uitx.o [1]
+  .text              ro code   0x800'4b04    0x1c  cstartup_M.o [6]
+  .rodata            const     0x800'4b20    0x18  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4b38    0x14  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4b4c    0x14  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4b60    0x10  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4b70    0x10  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4b80    0x10  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4b90    0x10  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4ba0    0x10  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4bb0    0x10  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4bc0    0x10  lvq_stm32f4_uitx.o [1]
+  .text              ro code   0x800'4bd0    0x10  stm32f4xx_it.o [3]
+  .rodata            const     0x800'4be0     0xc  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4bec     0xc  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4bf8     0x8  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4c00     0x8  lvq_stm32f4_uitx.o [1]
+  .rodata            const     0x800'4c08     0x0  zero_init3.o [6]
+  .rodata            const     0x800'4c08     0x0  packbits_init_single.o [6]
+  Initializer bytes  const     0x800'4c08    0xdc  <for P2-1>
+                             - 0x800'4ce4  0x4ca4
+
+"P2", part 1 of 3:                          0x148
+  P2-1                        0x2000'0000   0x148  <Init block>
+    .data            inited   0x2000'0000     0x8  lvq_stm32f4_fonts.o [1]
+    .data            inited   0x2000'0008     0xc  lvq_stm32f4_i2c.o [1]
+    .data            inited   0x2000'0014    0x28  lvq_stm32f4_uitx.o [1]
+    .data            inited   0x2000'003c    0xc8  lvq_stm32f4_uitx.o [1]
+    .data            inited   0x2000'0104     0x4  system_stm32f4xx.o [3]
+    .data            inited   0x2000'0108     0x8  XShttio.o [4]
+    .data            inited   0x2000'0110    0x38  xlocale_c.o [4]
+                            - 0x2000'0148   0x148
+
+"P2", part 2 of 3:                          0x460
+  .bss               zero     0x2000'0148   0x400  lvq_stm32f4_ssd1306.o [1]
+  .bss               zero     0x2000'0548    0x18  lvq_stm32f4_delay.o [1]
+  .bss               zero     0x2000'0560    0x18  lvq_stm32f4_gpio.o [1]
+  .bss               zero     0x2000'0578    0x10  main.o [3]
+  .bss               zero     0x2000'0588     0x8  lvq_stm32f4_ssd1306.o [1]
+  .bss               zero     0x2000'0590     0x4  lvq_stm32f4_delay.o [1]
+  .bss               zero     0x2000'0594     0x4  lvq_stm32f4_delay.o [1]
+  .bss               zero     0x2000'0598     0x4  lvq_stm32f4_delay.o [1]
+  .bss               zero     0x2000'059c     0x4  lvq_stm32f4_i2c.o [1]
+  .bss               zero     0x2000'05a0     0x4  xfail_s.o [4]
+  .bss               zero     0x2000'05a4     0x2  lvq_stm32f4_delay.o [1]
+  .bss               zero     0x2000'05a6     0x1  lvq_stm32f4_delay.o [1]
+                            - 0x2000'05a7   0x45f
+
+"P2", part 3 of 3:                         0x2000
+  CSTACK                      0x2000'05a8  0x2000  <Block>
+    CSTACK           uninit   0x2000'05a8  0x2000  <Block tail>
+                            - 0x2000'25a8  0x2000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'4ce4   0x803'ffff  0x3'b31c
+  0x2000'25a8  0x2000'ffff    0xda58
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x45f:
+          0x2000'0148  0x45f
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xdc (67% of destination):
+           0x800'4c08   0xdc
+    1 destination range, total size 0x148:
+          0x2000'0000  0x148
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ: [1]
+    lvq_stm32f4_adc.o            22
+    lvq_stm32f4_adc_dma.o       428
+    lvq_stm32f4_delay.o         460                39
+    lvq_stm32f4_fonts.o                1'905        8
+    lvq_stm32f4_gpio.o          608                24
+    lvq_stm32f4_i2c.o         1'186        8       16
+    lvq_stm32f4_nrf24.o          34
+    lvq_stm32f4_ssd1306.o     1'852             1'032
+    lvq_stm32f4_uitx.o        3'868    2'009      240
+    -------------------------------------------------
+    Total:                    8'458    3'922    1'359
+
+E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\STD: [2]
+    stm32f4xx_adc.o             212
+    stm32f4xx_i2c.o              52
+    -------------------------------------------------
+    Total:                      264
+
+E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\src: [3]
+    main.o                      180                16
+    stm32f4xx_it.o               16
+    system_stm32f4xx.o                     3        4
+    -------------------------------------------------
+    Total:                      196        3       20
+
+dl7M_tlf.a: [4]
+    XShttio.o                     8        5        8
+    abort.o                       6
+    exit.o                        4
+    low_level_init.o              4
+    sprintf.o                    64
+    xfail_s.o                    64                 4
+    xlocale_c.o                   8       41       56
+    xprintflarge_nomb.o       3'290
+    xsprout.o                    10
+    -------------------------------------------------
+    Total:                    3'458       46       68
+
+m7M_tls.a: [5]
+    DblAddSub.o                 590
+    DblDiv.o                    582
+    DblMul.o                    426
+    DblToFlt.o                  104
+    DblToU32.o                   34
+    FltToDbl.o                   72
+    U32ToDbl.o                   28
+    fpinit_M.o                   34
+    frexp.o                     112
+    -------------------------------------------------
+    Total:                    1'982
+
+rt7M_tl.a: [6]
+    ABImemcpy_unaligned.o       118
+    ABImemset.o                 102
+    I64DivMod.o                 560
+    I64DivZer.o                   2
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 28
+    data_init.o                  40
+    memchr.o                     88
+    packbits_init_single.o       58
+    strchr.o                     22
+    strlen.o                     54
+    vector_table_M.o             64
+    zero_init3.o                 56
+    -------------------------------------------------
+    Total:                    1'232
+
+shb_l.a: [7]
+    exit.o                       20
+    iarttio.o                    44
+    -------------------------------------------------
+    Total:                       64
+
+    Gaps                         23        4
+    Linker created                        32    8'192
+-----------------------------------------------------
+    Grand Total:             15'677    4'007    9'639
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'4914          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'4934          --   Gb  - Linker created -
+?main                    0x800'4ab5         Code  Gb  cmain.o [6]
+ADC_RegularChannelConfig
+                         0x800'4645   0xd4  Code  Gb  stm32f4xx_adc.o [2]
+AdcValues               0x2000'0578   0x10  Data  Gb  main.o [3]
+BusFault_Handler         0x800'4bd7    0x2  Code  Gb  stm32f4xx_it.o [3]
+CSTACK$$Base            0x2000'05a8          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'25a8          --   Gb  - Linker created -
+Counter_us              0x2000'0590    0x4  Data  Lc  lvq_stm32f4_delay.o [1]
+CustomTimers            0x2000'0548   0x18  Data  Lc  lvq_stm32f4_delay.o [1]
+DebugMon_Handler         0x800'4bdd    0x2  Code  Gb  stm32f4xx_it.o [3]
+Delay_1ms               0x2000'05a4    0x2  Data  Lc  lvq_stm32f4_delay.o [1]
+Delay_Init               0x800'17e9   0x28  Code  Gb  lvq_stm32f4_delay.o [1]
+Delay_ms_systick         0x800'1811    0xe  Code  Gb  lvq_stm32f4_delay.o [1]
+Delay_us_systick         0x800'181f   0x12  Code  Gb  lvq_stm32f4_delay.o [1]
+Font7x10                 0x800'3914  0x76c  Data  Gb  lvq_stm32f4_fonts.o [1]
+Font_7x10               0x2000'0000    0x8  Data  Gb  lvq_stm32f4_fonts.o [1]
+GPIO_UsedPins           0x2000'0560   0x18  Data  Lc  lvq_stm32f4_gpio.o [1]
+HardFault_Handler        0x800'4bd3    0x2  Code  Gb  stm32f4xx_it.o [3]
+I2C_CheckEvent           0x800'2ddd   0x34  Code  Gb  stm32f4xx_i2c.o [2]
+LVQ_ADC_DMA_ConfigChannel
+                         0x800'45f5   0x38  Code  Gb  lvq_stm32f4_adc_dma.o [1]
+LVQ_ADC_DMA_Init         0x800'4481  0x13e  Code  Gb  lvq_stm32f4_adc_dma.o [1]
+LVQ_ADC_INT_InitPin      0x800'462d   0x16  Code  Gb  lvq_stm32f4_adc.o [1]
+LVQ_Caculator_Volume     0x800'0097  0x146  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_DELAY_1msHandler     0x800'17c3    0x2  Code  Gb  lvq_stm32f4_delay.o [1]
+LVQ_DELAY_Initialized   0x2000'05a6    0x1  Data  Gb  lvq_stm32f4_delay.o [1]
+LVQ_GPIO_Config          0x800'2f45   0xe0  Code  Gb  lvq_stm32f4_gpio.o [1]
+LVQ_GPIO_EnableClock     0x800'2ecd   0x78  Code  Gb  lvq_stm32f4_gpio.o [1]
+LVQ_GPIO_GetPortSource   0x800'3025    0xa  Code  Gb  lvq_stm32f4_gpio.o [1]
+LVQ_GPIO_INT_EnableClock
+                         0x800'302f   0x16  Code  Gb  lvq_stm32f4_gpio.o [1]
+LVQ_GPIO_Init            0x800'2e11   0x34  Code  Gb  lvq_stm32f4_gpio.o [1]
+LVQ_GPIO_InitAlternate   0x800'2e45   0x88  Code  Gb  lvq_stm32f4_gpio.o [1]
+LVQ_I2C1_INT_InitPins    0x800'1f15   0x6c  Code  Lc  lvq_stm32f4_i2c.o [1]
+LVQ_I2C2_INT_InitPins    0x800'1f81   0x6a  Code  Lc  lvq_stm32f4_i2c.o [1]
+LVQ_I2C3_INT_InitPins    0x800'1feb   0x66  Code  Lc  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_ConfigClock      0x800'1c93  0x10a  Code  Lc  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_INT_Clocks      0x2000'0008    0xc  Data  Lc  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_Init             0x800'1bf9   0x9a  Code  Gb  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_InitCustomPinsCallback
+                         0x800'3071    0x2  Code  Wk  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_Start            0x800'1e0b   0xb2  Code  Gb  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_Stop             0x800'1edf   0x36  Code  Gb  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_Timeout         0x2000'059c    0x4  Data  Lc  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_Write            0x800'1d9d   0x30  Code  Gb  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_WriteData        0x800'1ebd   0x22  Code  Gb  lvq_stm32f4_i2c.o [1]
+LVQ_I2C_WriteMulti       0x800'1dcd   0x3e  Code  Gb  lvq_stm32f4_i2c.o [1]
+LVQ_MapVolume            0x800'01dd  0x1fa  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_SSD1306             0x2000'0588    0x8  Data  Lc  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_Buffer      0x2000'0148  0x400  Data  Lc  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_Clear        0x800'1679    0xe  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_DrawBitmap   0x800'0f5d   0x8c  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_DrawFilledRectangle
+                         0x800'1601   0x78  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_DrawLine     0x800'1383  0x1c8  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_DrawPixel    0x800'11f9   0xa0  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_DrawRectangle
+                         0x800'154b   0xb6  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_Fill         0x800'11db   0x1e  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_GotoXY       0x800'1299    0xa  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_Init         0x800'0fe9  0x198  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_Putc         0x800'12a3   0xb2  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_Puts         0x800'1355   0x2e  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_SSD1306_UpdateScreen
+                         0x800'1181   0x5a  Code  Gb  lvq_stm32f4_ssd1306.o [1]
+LVQ_Time                0x2000'0594    0x4  Data  Gb  lvq_stm32f4_delay.o [1]
+LVQ_Time2               0x2000'0598    0x4  Data  Gb  lvq_stm32f4_delay.o [1]
+LVQ_UITX_Arrow_Horizontial
+                         0x800'4ae8   0x1c  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Arrow_Small     0x800'4bec    0xc  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Arrow_Verticial
+                         0x800'4b4c   0x14  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Battery         0x800'0e71   0x7c  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Display         0x800'052b  0x274  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_EndPoint        0x800'0c95  0x1dc  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_HomeScreen      0x800'4080  0x400  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_BATTERY    0x800'4a14   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_DASHBOARD
+                         0x800'4974   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_ENDPOINT   0x800'4a94   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_FIREWORKS
+                         0x800'4994   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_GPS        0x800'49b4   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_PARKSENSOR
+                         0x800'49d4   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_REVERSE    0x800'4a54   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_SETTING    0x800'4a34   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_SLIDER     0x800'47cc   0x84  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_TURBO      0x800'49f4   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_ICON_VOLUME     0x800'4a74   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Loading         0x800'0041   0x56  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_MENUS          0x2000'0014   0x28  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_MENU_ITEMS     0x2000'003c   0xc8  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_RE_1            0x800'4934   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_RE_2            0x800'4954   0x20  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Reverse         0x800'079f  0x4ec  Code  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Scrollbar_Background
+                         0x800'4850   0x40  Data  Gb  lvq_stm32f4_uitx.o [1]
+LVQ_UITX_Volume          0x800'03d7  0x154  Code  Gb  lvq_stm32f4_uitx.o [1]
+MemManage_Handler        0x800'4bd5    0x2  Code  Gb  stm32f4xx_it.o [3]
+NMI_Handler              0x800'4bd1    0x2  Code  Gb  stm32f4xx_it.o [3]
+NVIC_SetPriority         0x800'1699   0x24  Code  Lc  lvq_stm32f4_delay.o [1]
+PendSV_Handler           0x800'4bdf    0x2  Code  Gb  stm32f4xx_it.o [3]
+Region$$Table$$Base      0x800'4914          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'4934          --   Gb  - Linker created -
+SVC_Handler              0x800'4bdb    0x2  Code  Gb  stm32f4xx_it.o [3]
+SysTick_Config           0x800'16bd   0x2e  Code  Lc  lvq_stm32f4_delay.o [1]
+SysTick_Handler          0x800'17c5   0x24  Code  Gb  lvq_stm32f4_delay.o [1]
+SystemCoreClock         0x2000'0104    0x4  Data  Gb  system_stm32f4xx.o [3]
+TimingDelay_Increasement
+                         0x800'16eb   0xd8  Code  Gb  lvq_stm32f4_delay.o [1]
+UsageFault_Handler       0x800'4bd9    0x2  Code  Gb  stm32f4xx_it.o [3]
+_LC                      0x800'2101    0x6  Code  Lc  xprintflarge_nomb.o [4]
+_LitobLargeNoMb          0x800'2bd3  0x114  Code  Lc  xprintflarge_nomb.o [4]
+_Locale_lconv           0x2000'0110   0x38  Data  Lc  xlocale_c.o [4]
+_PrintfLargeNoMb         0x800'2107  0xac6  Code  Gb  xprintflarge_nomb.o [4]
+_PutcharsLargeNoMb       0x800'2d41   0x2e  Code  Lc  xprintflarge_nomb.o [4]
+_SProut                  0x800'1937    0xa  Code  Gb  xsprout.o [4]
+__aeabi_d2f              0x800'1b49         Code  Gb  DblToFlt.o [5]
+__aeabi_d2uiz            0x800'3415         Code  Gb  DblToU32.o [5]
+__aeabi_ddiv             0x800'31cd         Code  Gb  DblDiv.o [5]
+__aeabi_dmul             0x800'199d         Code  Gb  DblMul.o [5]
+__aeabi_dsub             0x800'35a5         Code  Gb  DblAddSub.o [5]
+__aeabi_f2d              0x800'1bb1         Code  Gb  FltToDbl.o [5]
+__aeabi_ldiv0            0x800'38c9         Code  Gb  I64DivZer.o [6]
+__aeabi_memset           0x800'2099         Code  Gb  ABImemset.o [6]
+__aeabi_ui2d             0x800'1981         Code  Gb  U32ToDbl.o [5]
+__aeabi_uldivmod         0x800'3691         Code  Gb  I64DivMod.o [6]
+__cmain                  0x800'4ab5         Code  Gb  cmain.o [6]
+__exit                   0x800'38cd   0x14  Code  Gb  exit.o [7]
+__iar_Fail_s             0x800'308d   0x1c  Code  Gb  xfail_s.o [4]
+__iar_Memchr             0x800'3105         Code  Gb  memchr.o [6]
+__iar_Memset             0x800'2099         Code  Gb  ABImemset.o [6]
+__iar_Memset_word        0x800'20a1         Code  Gb  ABImemset.o [6]
+__iar_Strchr             0x800'3075         Code  Gb  strchr.o [6]
+__iar_close_ttio         0x800'38e1   0x2c  Code  Gb  iarttio.o [7]
+__iar_data_init3         0x800'48c9   0x28  Code  Gb  data_init.o [6]
+__iar_frexp              0x800'3169         Code  Gb  frexp.o [5]
+__iar_frexpl             0x800'3169         Code  Gb  frexp.o [5]
+__iar_init_vfp           0x800'48f1         Code  Gb  fpinit_M.o [5]
+__iar_lookup_ttioh       0x800'390d    0x8  Code  Gb  XShttio.o [4]
+__iar_packbits_init_single3
+                         0x800'1887   0x3a  Code  Gb  packbits_init_single.o [6]
+__iar_program_start      0x800'4b05         Code  Gb  cstartup_M.o [6]
+__iar_softfp___iar_frexp64
+                         0x800'315d         Code  Gb  frexp.o [5]
+__iar_softfp_frexp       0x800'315d         Code  Gb  frexp.o [5]
+__iar_softfp_frexpl      0x800'315d         Code  Gb  frexp.o [5]
+__iar_ttio_handles      0x2000'0108    0x8  Data  Lc  XShttio.o [4]
+__iar_unaligned_memcpy   0x800'18c1         Code  Gb  ABImemcpy_unaligned.o [6]
+__iar_unaligned_memcpy4
+                         0x800'18e1         Code  Gb  ABImemcpy_unaligned.o [6]
+__iar_unaligned_memcpy8
+                         0x800'18e1         Code  Gb  ABImemcpy_unaligned.o [6]
+__iar_zero_init3         0x800'4891   0x38  Code  Gb  zero_init3.o [6]
+__low_level_init         0x800'4ad3    0x4  Code  Gb  low_level_init.o [4]
+__vector_table           0x800'0000         Data  Gb  vector_table_M.o [6]
+_call_main               0x800'4ac1         Code  Gb  cmain.o [6]
+_exit                    0x800'4add         Code  Gb  cexit.o [6]
+abort                    0x800'38c1    0x6  Code  Gb  abort.o [4]
+exit                     0x800'4ad7    0x4  Code  Gb  exit.o [4]
+localeconv               0x800'3689    0x4  Code  Gb  xlocale_c.o [4]
+main                     0x800'4719   0xb4  Code  Gb  main.o [3]
+map                      0x800'1865   0x22  Code  Gb  lvq_stm32f4_nrf24.o [1]
+memchr                   0x800'3105         Code  Gb  memchr.o [6]
+scale                    0x800'2ce7   0x46  Code  Lc  xprintflarge_nomb.o [4]
+sec_hand                0x2000'05a0    0x4  Data  Lc  xfail_s.o [4]
+sprintf                  0x800'1941   0x40  Code  Gb  sprintf.o [4]
+strchr                   0x800'3075         Code  Gb  strchr.o [6]
+strlen                   0x800'30cd         Code  Gb  strlen.o [6]
+
+
+[1] = E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\LVQ
+[2] = E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\STD
+[3] = E:\Downloads\STM32F4\STM32F446RE_REG\27.1-STM32F401CCU6_NRF24L01_TX\IAR\Debug\Obj\src
+[4] = dl7M_tlf.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+  15'677 bytes of readonly  code memory
+   4'007 bytes of readonly  data memory
+   9'639 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

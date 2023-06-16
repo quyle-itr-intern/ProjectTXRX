@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=CH1- Pin=SW3-2
+Removed Pin From Net: NetName=CH2+ Pin=SW5-2
+Removed Pin From Net: NetName=CH2- Pin=SW7-2
+Removed Pin From Net: NetName=5V Pin=SW7-3
+Removed Pin From Net: NetName=CH3+ Pin=SW9-2
+Removed Pin From Net: NetName=5V Pin=SW9-3
+Removed Pin From Net: NetName=CH3- Pin=SW11-2
+Removed Pin From Net: NetName=5V Pin=SW11-3
+Removed Pin From Net: NetName=CH4+ Pin=SW14-2
+Removed Pin From Net: NetName=5V Pin=SW14-3
+Removed Pin From Net: NetName=CH4- Pin=SW15-2
+Removed Pin From Net: NetName=5V Pin=SW15-3
