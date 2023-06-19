@@ -43,6 +43,7 @@ uint16_t uitx_volminmax[7][3] = { { 461, 1808, 3460 },
 void Buzzer(uint8_t beep, uint16_t delay);
 void SetFrequencyLoopSend(uint16_t __frequency);
 void PackDataSend(void);
+void CheckHome(void);
 
 #define BUZZER_PORT GPIOB
 #define BUZZER_PIN  GPIO_PIN_10
@@ -133,6 +134,9 @@ int main(void)
 		LVQ_74HC165_Init(dataChannel);
 	 
 		LVQ_UITX_ReadData(0x08010000, &UITX_REData);
+	 
+		LVQ_SSD1306_Init();
+		CheckHome();
 	
 		LVQ_NRF24_Init(nrf24);
 	
@@ -159,7 +163,6 @@ int main(void)
 		SetFrequencyLoopSend(20);
 		
 		Buzzer(2, 200);
-		LVQ_SSD1306_Init();
 		LVQ_UITX_Loading();
 		LVQ_UITX_Display();
 		LVQ_UITX_EndPoint();
@@ -253,4 +256,25 @@ void SetFrequencyLoopSend(uint16_t __frequency)
 		NVIC_Init(&NVIC_InitStruct);
 		/* Start timer */
 		TIM_Cmd(TIM2, ENABLE);
+}
+
+void CheckHome(void)
+{
+		if( AdcValues[1] > 600 )
+		{
+				LVQ_SSD1306_Fill(0);
+				LVQ_SSD1306_DrawRectangle(0, 0, 128, 64, 1);
+				LVQ_SSD1306_GotoXY(13, 20);
+				LVQ_SSD1306_Puts("Return Joystick", &Font_7x10, 1);
+				LVQ_SSD1306_GotoXY(40, 35);
+				LVQ_SSD1306_Puts("To Home", &Font_7x10, 1);
+				LVQ_SSD1306_GotoXY(40, 45);
+				LVQ_SSD1306_Puts(" . . . ", &Font_7x10, 1);
+				LVQ_SSD1306_UpdateScreen(); //display
+				while(1)
+				{
+						Buzzer(2, 100);
+						Delay_ms_systick(5000);
+				}
+		}
 }

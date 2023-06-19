@@ -27,7 +27,32 @@ Project File Date:  06/15/2023
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\File Install KeilC\KeilC V5\ARM\ARMCC\Bin'
 Build target 'NRF24L01_TX_1'
-".\Objects\NRF24L01_TX_1.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+.\src\stm32f4xx.h(11581): warning:  #47-D: incompatible redefinition of macro "DBGMCU_APB2_FZ_DBG_TIM1_STOP"  (declared at line 11574)
+  #define  DBGMCU_APB2_FZ_DBG_TIM1_STOP        DBGMCU_APB1_FZ_DBG_TIM1_STOP    
+.\src\stm32f4xx.h(11582): warning:  #47-D: incompatible redefinition of macro "DBGMCU_APB2_FZ_DBG_TIM8_STOP"  (declared at line 11575)
+  #define  DBGMCU_APB2_FZ_DBG_TIM8_STOP        DBGMCU_APB1_FZ_DBG_TIM8_STOP
+.\src\stm32f4xx.h(11583): warning:  #47-D: incompatible redefinition of macro "DBGMCU_APB2_FZ_DBG_TIM9_STOP"  (declared at line 11576)
+  #define  DBGMCU_APB2_FZ_DBG_TIM9_STOP        DBGMCU_APB1_FZ_DBG_TIM9_STOP
+.\src\stm32f4xx.h(11584): warning:  #47-D: incompatible redefinition of macro "DBGMCU_APB2_FZ_DBG_TIM10_STOP"  (declared at line 11577)
+  #define  DBGMCU_APB2_FZ_DBG_TIM10_STOP       DBGMCU_APB1_FZ_DBG_TIM10_STOP
+.\src\stm32f4xx.h(11585): warning:  #47-D: incompatible redefinition of macro "DBGMCU_APB2_FZ_DBG_TIM11_STOP"  (declared at line 11578)
+  #define  DBGMCU_APB2_FZ_DBG_TIM11_STOP       DBGMCU_APB1_FZ_DBG_TIM11_STOP
+src\main.c(265): warning:  #188-D: enumerated type mixed with another type
+  				LVQ_SSD1306_Fill(0);
+src\main.c(266): warning:  #188-D: enumerated type mixed with another type
+  				LVQ_SSD1306_DrawRectangle(0, 0, 128, 64, 1);
+src\main.c(268): warning:  #188-D: enumerated type mixed with another type
+  				LVQ_SSD1306_Puts("Return Joystick", &Font_7x10, 1);
+src\main.c(270): warning:  #188-D: enumerated type mixed with another type
+  				LVQ_SSD1306_Puts("To Home", &Font_7x10, 1);
+src\main.c(272): warning:  #188-D: enumerated type mixed with another type
+  				LVQ_SSD1306_Puts(" . . . ", &Font_7x10, 1);
+src\main.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=26570 RO-data=29414 RW-data=628 ZI-data=3108  
+FromELF: creating hex file...
+".\Objects\NRF24L01_TX_1.axf" - 0 Error(s), 10 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -41,7 +66,7 @@ Package Vendor: Keil
   D:\File Install KeilC\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
