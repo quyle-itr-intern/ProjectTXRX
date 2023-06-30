@@ -54,4 +54,6 @@ Final Complete Hardware
 
 Start programming...
 
+### ***Video demo:*** *https://youtu.be/AEG8hE7v5gU*
+
 Project is running ( 70% )
